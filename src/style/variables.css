@@ -2,4 +2,8 @@
     .flexCenter {
         @apply flex items-center justify-center;
     }
+
+    .flexBetween {
+        @apply flex items-center justify-between;
+    }
 }

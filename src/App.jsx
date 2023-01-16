@@ -1,13 +1,12 @@
 import { useSelector } from 'react-redux';
+import Toaster from './components/toaster/Toaster';
+import Router from './router/Router';
 
 const App = () => {
-    const todo = useSelector((state) => state.todos.loading);
-
     return (
-        <div className='app'>
-            <h1 className='flexCenter'>Hello World</h1>
-
-            {todo && <h1>Loading...</h1>}
+        <div className='app font-poppins antialiased'>
+            <Router />
+            <Toaster />
         </div>
     );
 };
